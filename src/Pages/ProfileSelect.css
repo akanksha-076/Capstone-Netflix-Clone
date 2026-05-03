@@ -1,0 +1,240 @@
+/* ===== PROFILE SELECT PAGE ===== */
+.profile {
+  background-color: #141414;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__content {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile__logo {
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+.profile__heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* ===== PROFILE GRID ===== */
+.profile__grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.profile__card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s ease;
+}
+
+.profile__card:hover {
+  transform: scale(1.05);
+}
+
+.profile__card:hover .profile__name {
+  color: white;
+}
+
+/* ===== PROFILE AVATAR ===== */
+.profile__avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: border 0.2s ease;
+}
+
+.profile__card:hover .profile__avatar {
+  border: 4px solid white;
+}
+
+.profile__emoji {
+  font-size: 4rem;
+}
+
+.profile__avatar--add {
+  background-color: #333;
+  border: 3px dashed #555;
+}
+
+.profile__add__icon {
+  font-size: 4rem;
+  color: #aaa;
+}
+
+.profile__avatar--add:hover {
+  border-color: white;
+}
+
+/* ===== PROFILE NAME ===== */
+.profile__name {
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ===== DELETE BUTTON ===== */
+.profile__delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.profile__delete:hover {
+  background-color: #e50914;
+  color: white;
+}
+
+/* ===== ADD PROFILE FORM ===== */
+.profile__add__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.profile__input {
+  background-color: #333;
+  border: 1px solid #aaa;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 250px;
+  outline: none;
+  text-align: center;
+}
+
+.profile__input:focus {
+  border-color: white;
+}
+
+.profile__add__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.profile__btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.profile__btn:hover {
+  opacity: 0.8;
+}
+
+.profile__btn--save {
+  background-color: white;
+  color: black;
+}
+
+.profile__btn--cancel {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* ===== MANAGE BUTTON ===== */
+.profile__manage {
+  background-color: transparent;
+  color: #aaa;
+  border: 1px solid #aaa;
+  padding: 10px 30px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.profile__manage:hover {
+  color: white;
+  border-color: white;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+  .profile__heading {
+    font-size: 2rem;
+  }
+
+  .profile__avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile__emoji {
+    font-size: 3rem;
+  }
+
+  .profile__grid {
+    gap: 20px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .profile__heading {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .profile__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile__emoji {
+    font-size: 2.5rem;
+  }
+
+  .profile__grid {
+    gap: 15px;
+  }
+
+  .profile__name {
+    font-size: 0.85rem;
+  }
+
+  .profile__logo {
+    width: 110px;
+    margin-bottom: 25px;
+  }
+}

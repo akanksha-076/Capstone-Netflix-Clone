@@ -1,0 +1,31 @@
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #333;
+}
+
+.footer__text {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.footer__subtext {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .footer__text {
+    font-size: 0.8rem;
+  }
+
+  .footer__subtext {
+    font-size: 0.7rem;
+  }
+}

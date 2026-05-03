@@ -1,0 +1,219 @@
+/* ===== BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e50914;
+  border-radius: 10px;
+}
+
+/* ===== RESPONSIVE FONT SIZES ===== */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+/* ===== LIGHT MODE ===== */
+body.light__mode {
+  background-color: #ffffff;
+  color: #141414;
+}
+
+body.light__mode .navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light__mode .navbar__link {
+  color: #141414;
+}
+
+body.light__mode .navbar__link:hover {
+  color: #e50914;
+}
+
+body.light__mode .navbar__theme__btn {
+  border-color: #333;
+}
+
+body.light__mode .navbar__profile__name {
+  color: #141414;
+}
+
+body.light__mode .home {
+  background-color: #f5f5f5;
+}
+
+body.light__mode .home__rows {
+  background-color: #f5f5f5;
+}
+
+body.light__mode .row__title {
+  color: #141414;
+}
+
+body.light__mode .screentime {
+  background-color: #ffffff;
+  border-color: #ddd;
+}
+
+body.light__mode .screentime__title {
+  color: #141414;
+}
+
+body.light__mode .screentime__stat {
+  background-color: #f0f0f0;
+  border-color: #ddd;
+}
+
+body.light__mode .screentime__stat__value {
+  color: #141414;
+}
+
+body.light__mode .continue__name {
+  color: #141414;
+}
+
+body.light__mode .footer {
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+body.light__mode .footer__text {
+  color: #141414;
+}
+
+body.light__mode .footer__subtext {
+  color: #555;
+}
+
+body.light__mode .categories {
+  background-color: #f5f5f5;
+}
+
+body.light__mode .categories__heading {
+  color: #141414;
+}
+
+body.light__mode .categories__genre__btn {
+  background-color: #e0e0e0;
+  color: #141414;
+}
+
+body.light__mode .categories__genre__btn:hover {
+  background-color: #ccc;
+}
+
+body.light__mode .categories__genre__btn.active {
+  background-color: #e50914;
+  color: white;
+}
+
+body.light__mode .categories__card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light__mode .categories__card__info h3 {
+  color: #141414;
+}
+
+body.light__mode .watch {
+  background-color: #f5f5f5;
+}
+
+body.light__mode .watch__nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light__mode .watch__back {
+  color: #141414;
+  border-color: #141414;
+}
+
+body.light__mode .watch__back:hover {
+  background-color: #141414;
+  color: white;
+}
+
+body.light__mode .watch__title {
+  color: #141414;
+}
+
+body.light__mode .watch__details h1 {
+  color: #141414;
+}
+
+body.light__mode .watch__overview {
+  color: #333;
+}
+
+body.light__mode .watch__rating,
+body.light__mode .watch__year,
+body.light__mode .watch__runtime {
+  background-color: #e0e0e0;
+  color: #141414;
+}
+
+body.light__mode .profile {
+  background-color: #f5f5f5;
+}
+
+body.light__mode .profile__heading {
+  color: #141414;
+}
+
+body.light__mode .profile__name {
+  color: #555;
+}
+
+body.light__mode .profile__manage {
+  color: #555;
+  border-color: #555;
+}
+
+body.light__mode .profile__manage:hover {
+  color: #141414;
+  border-color: #141414;
+}
+
+body.light__mode .screentime__input {
+  background-color: #f0f0f0;
+  border-color: #ddd;
+  color: #141414;
+}
+
+body.light__mode .screentime__input::placeholder {
+  color: #888;
+}

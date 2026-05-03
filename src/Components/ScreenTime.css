@@ -1,0 +1,228 @@
+/* ===== SCREEN TIME ===== */
+.screentime {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px;
+  border: 1px solid #333;
+}
+
+.screentime__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.screentime__title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.screentime__set__btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.screentime__set__btn:hover {
+  background-color: #f40612;
+}
+
+/* ===== INPUT ROW ===== */
+.screentime__input__row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.screentime__input {
+  flex: 1;
+  background-color: #333;
+  border: 1px solid #555;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  min-width: 200px;
+}
+
+.screentime__input:focus {
+  border-color: #e50914;
+}
+
+.screentime__input::placeholder {
+  color: #aaa;
+}
+
+.screentime__save__btn {
+  background-color: #46d369;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+
+.screentime__save__btn:hover {
+  opacity: 0.8;
+}
+
+/* ===== STATS ===== */
+.screentime__stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.screentime__stat {
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 15px 20px;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.screentime__stat__label {
+  display: block;
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.screentime__stat__value {
+  display: block;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ===== PROGRESS BAR ===== */
+.screentime__progress__container {
+  margin-bottom: 15px;
+}
+
+.screentime__progress__bar {
+  width: 100%;
+  height: 8px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.screentime__progress__fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.screentime__progress__label {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+/* ===== WARNING ===== */
+.screentime__warning {
+  background-color: rgba(232, 124, 3, 0.15);
+  border: 1px solid #e87c03;
+  color: #e87c03;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* ===== EXCEEDED ===== */
+.screentime__exceeded {
+  background-color: rgba(229, 9, 20, 0.15);
+  border: 1px solid #e50914;
+  color: #e50914;
+  padding: 15px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.screentime__reset__btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: opacity 0.3s ease;
+}
+
+.screentime__reset__btn:hover {
+  opacity: 0.8;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+  .screentime {
+    padding: 20px 15px;
+    margin: 15px;
+  }
+
+  .screentime__title {
+    font-size: 1.1rem;
+  }
+
+  .screentime__stat__value {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .screentime {
+    padding: 15px 12px;
+    margin: 10px;
+  }
+
+  .screentime__title {
+    font-size: 1rem;
+  }
+
+  .screentime__stats {
+    gap: 10px;
+  }
+
+  .screentime__stat {
+    padding: 12px 10px;
+    min-width: 80px;
+  }
+
+  .screentime__stat__value {
+    font-size: 1rem;
+  }
+
+  .screentime__set__btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
